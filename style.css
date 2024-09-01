@@ -175,3 +175,126 @@ input {
    text-align: center;
    margin: 5px;
 }
+
+
+/*sobre*/ 
+
+#sobre {
+   margin: 30px 60px;
+   font-size: 20px;
+   gap: 10px;
+   background: rgb(237, 244, 252);
+}
+
+#sobre h1 {
+   color: blue;
+}
+
+.somos {
+   padding: 30px 50px;
+}
+
+.obj {
+   gap: 10px;
+   padding: 30px 50px;
+}
+
+.ideal {
+   padding: 0px 50px;
+}
+
+.img-sob {
+   padding: 30px 50px;
+   display: flex;
+   gap: 150px;
+}
+
+.img-sob img{
+   padding: 10px;
+   height: 50px;
+   width: 50px;
+   border-radius: 100%;
+}
+
+.segunda {
+   gap: 10px;
+   padding: 30px 50px;
+}
+
+
+#footer-sobre {
+   font-size: 20px;
+   gap: 10px;   
+}
+
+.fo-sobre {
+   display: flex;
+}
+
+.footer-sob {
+   padding: 0px 75px ;
+}
+
+.footer-sob h4 {
+   font-size: 25px;
+}
+
+.footer-sob a {
+   margin: 8px;
+}
+
+.final-sob {
+   padding: 30px;
+}
+
+
+
+/*cadastro */
+
+#cadastro {
+   padding: 0px 30px;
+}
+
+li.botao-cad {
+   background: rgb(171, 171, 226);
+   border-radius: 10px;
+   width: 65px;
+   cursor: pointer; /*mudar o cursor ao passar no botao*/
+   height: 30px;
+}
+
+li.botao-cad a {
+   color: blue;
+   font-size: 25px;
+   cursor: pointer; /*mudar o cursor ao passar no botao*/
+}
+.form-cadastro {
+   padding: 30px 10px;
+   gap: 10px;
+   background: rgb(237, 244, 252);
+}
+
+.respo {
+   padding: 0px 200px;
+   gap: 10px;
+}
+
+
+.input-box2 {
+   display: flex;
+   flex-direction: column;
+   height: 50px;
+}
+
+.enviar {
+   text-align: auto;
+}
+.enviar input {
+   margin-left: 450px;
+   padding: 0px;
+   background: rgb(171, 171, 226);
+   border-radius: 10px;
+   width: 100px;
+   border: 0;
+   font-size: 20px;
+}
