@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Playwrite+CU:wght@100..400&display=swap');
+/*pagina index*/
+* {
+   margin: 0;
+   text-decoration: none;
+   padding: 0;
+   font-family: "Nerko One", cursive, sans-serif;
+}
+
+body {
+   background: url(./img/images\ \(1\).jpg);
+}
+
+.fundo {
+   background: white;
+   padding: 1px 5px;
+   margin: 100px 150px;
+   
+}
+
+.header {
+   margin: 3px 20px;
+   padding: 10px;
+   
+   
+}
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   
+}
+
+.nav-list {
+   display: flex;
+   gap: 20px;
+   list-style: none;
+}
+
+
+.nav-list a {
+   font-size: 19px;
+   padding-block: 16px;
+   color: black;
+
+}
+
+.nav-list li {
+   text-decoration: none;
+}
+
+li.botao {
+   background: rgb(171, 171, 226);
+   border-radius: 10px;
+   width: 140px;
+   cursor: pointer; /*mudar o cursor ao passar no botao*/
+   height: 30px;
+}
+
+li.botao a {
+   color: blue;
+   font-size: 25px;
+   cursor: pointer; /*mudar o cursor ao passar no botao*/
+}
+
+.corpo {
+   margin: 0px 30px;
+   padding: auto;
+   display: flex block;
+
+}
+
+.texto-index {
+   background: rgb(237, 244, 252);
+}
+
+.texto-index h1 {
+   font-family: 'Courier New', sans-serif;
+   color: blue;
+   margin: 20px;
+   font-size: 50px;
+}
+
+.texto-index button {
+   margin: 30px;
+   background: rgb(171, 171, 226);
+   border-radius: 10px;
+   width: 150px;
+   height: 30px;
+   border: 0;
+   font-size: 20px;
+}
+
+.texto-index p { 
+   margin: 30px;
+   font-size: 30px;
+}
+
+strong {
+   color: blue;
+}
+.img-index img {
+   width: 480px;
+   border-radius: 40%;
+
+}
+
+
+footer {
+   
+   padding: 30px;
+   font-size: 15px;
+   
+}
+
+
+/*pagina login*/
+.box-label {
+   margin: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+form {
+   padding: 100px;
+   
+}
+
+.barra-horizontal {
+   background-color: rgb(171, 171, 226);
+   height: 5px;
+   margin: 5px 0px;
+   
+}
+
+.campo-input {
+
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
+}
+
+.lembrar {
+   display: flex;
+   gap: 8px;
+   margin: 15px;
+
+}
+
+#entrar-login {
+   padding: 10px;
+   margin: 0px 100px;
+   align-self: center;
+   width: 160px;
+   border-radius: 30px;
+   background-color: rgb(171, 171, 226);
+   border: 0;
+   color: blue;
+   font-weight: 600;
+   cursor: pointer; /*mudar o cursor ao passar no botao*/
+   /*button duas cor
+   background-image: linear-gradient (#256a8a, #3393c1); */
+}
+
+input {
+   padding: 0px 90px ;
+   border-radius: 5px;
+}
+
+.esqueceu {
+   text-align: center;
+   margin: 5px;
+}
