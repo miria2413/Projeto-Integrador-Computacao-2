@@ -1,0 +1,744 @@
+/******************* area logo/ menu ****************/
+
+*{
+    margin: 10px;
+    padding: 0;
+    font-family: sans-serif; /*fonte usada*/
+    text-decoration: none; /*tirar linha de baixo do link*/
+}
+
+body {
+   background-color: rgb(247, 247, 244);
+}
+
+.logo {
+    position: fixed;
+    top: 0; /* Posicionar no topo absoluto */
+    width: 100%; /* Ocupar toda a largura da tela */
+    height: 30px; /* Ajustar altura do logo */
+    background-color: rgb(75, 252, 193); /* Cor de fundo do logo */
+    display: flex; /* Mudar para flexbox */
+    align-items: center; /* Alinhar verticalmente */
+    padding: 15px; /* Adicionar padding interno */
+    border-radius: 0; /* Remover arredondamento */
+    box-shadow: none; /* Remover sombra */
+    z-index: 10; /* Manter o logo acima do conteúdo */  
+   }
+
+.logo h1 {
+   background-color: orange;
+   font-size: 3rem;/*tamanho da fonte*/
+   text-align: left; /*posição do texto*/
+   font-weight: 900;
+   color: rgb(41, 64, 128);
+   
+}
+
+.logo h6 {
+   background-color: orange;
+   margin: 4rem 0 0.1 1rem;
+   font-family: sans-serif; /*fonte usada*/
+   font-size: 1rem;/*tamanho da fonte*/
+   text-align: left; /*posição do texto*/
+   font-weight: 800;
+   color: rgb(41, 64, 128);
+   height: 2rem;
+   
+}
+
+.logo img {
+   height: 1.8rem;
+   background-color: orange;
+}
+
+.menu {
+   background-color: orange;
+   position: fixed;
+   width: 100%; /* Ocupar toda a largura da tela */
+   align-items: center; /* Alinhar verticalmente */
+   top: 60px;
+   padding: 5px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   z-index: 10;
+ }
+
+.button-menu button {
+   
+   border-radius: 1rem; /*deixar a bordar redonda*/
+   border: none; /*remover a linha da borda*/
+}
+
+/*para o botao ficar grande*/
+[data-anchor="product"] {
+   background-color: rgb(78, 110, 200);
+   color: black;
+   font-weight: 900;
+   font-size: 1.5rem;
+   border: none; /*remover a linha da borda*/
+   cursor: pointer; /*mudar o cursor ao passar no botao*/
+   text-decoration: none; /*tirar linha de baixo do link*/
+   border-radius: 1rem; /*deixar a bordar redonda*/
+   padding: 0 2rem;
+   transition: .2s ease-in-out;
+}
+
+[data-anchor="product"]:hover {
+   background-color: rgb(41, 64, 128);
+   color: #fff;
+   transform: scale(1.2);
+   padding: 0 2rem;
+   border: none; /*remover a linha da borda*/
+   border-radius: 1rem; /*deixar a bordar redonda*/
+}
+
+.button-menu-1 input {
+   background-color: rgb(78, 110, 200);
+   margin-bottom: 1.5rem;
+   width: 90%;
+   border-radius: 1rem; /*deixar a bordar redonda*/
+   border: none; /*remover a linha da borda*/
+   font-size: 1.2rem;
+   cursor: pointer; /*mudar o cursor ao passar no botao*/
+   transition: .2s ease-in-out;
+}
+
+.button-menu-1 input:hover {
+   background-color: rgb(78, 110, 200);
+   color: #fff;
+   transform: scale(1.2);
+   padding: 0 2rem;
+   border: none; /*remover a linha da borda*/
+   border-radius: 1rem; /*deixar a bordar redonda*/
+}
+
+/*para o botao ficar grande*/
+[data-anchor="products-1"] {
+   background-color: rgb(78, 110, 200);
+   color: black;
+   font-weight: 900;
+   font-size: 1.5rem;
+   border: none; /*remover a linha da borda*/
+   padding: 0.2rem 1rem;
+   cursor: pointer; /*mudar o cursor ao passar no botao*/
+   margin: auto;
+   width: 80%;
+   text-align: center;
+   text-decoration: none; /*tirar linha de baixo do link*/
+   border-radius: 1rem; /*deixar a bordar redonda*/
+   padding: 0 2rem;
+   transition: .2s ease-in-out;
+   display: block;
+}
+
+[data-anchor="products-1"]:hover {
+   background-color: rgb(78, 110, 200);
+   color: #fff;
+   transform: scale(1.2);
+   padding: 0 2rem;
+   border: none; /*remover a linha da borda*/
+   border-radius: 1rem; /*deixar a bordar redonda*/
+}
+
+.button-menu {
+   text-align: center;
+   height: 2rem;
+   margin-top: 0.5rem;
+}
+
+.ul a{
+   margin-left: 2rem;
+}
+
+
+/***************** home principal *******************/
+.corpo {
+   background-color: rgb(253, 253, 147);
+   
+}
+
+.seccao-prim {
+   display: flex;
+   background-color: rgb(253, 253, 147);
+}
+
+.seccao-prim h1{
+   margin: 3.5rem;
+   color: rgb(78, 110, 200);
+   text-align: left;
+   font-size: 3rem;
+   display: flex;
+}
+
+.seccao-prim p {
+   
+
+   margin: 2rem;
+   text-align: left;
+   font-size: 1.5rem;
+}
+
+.texto-home {
+   flex: 1;
+}
+
+.img-1home {
+   padding: 2rem 5rem;
+}
+
+ .img-1home img {
+   height: 18rem;
+   box-shadow: 10px 5px 5px rgb(78, 110, 200); /*bordar de sombra na imagem*/
+ }
+
+ .seccao-segun {
+   display: flex;
+   background-color: rgb(253, 253, 147);
+ }
+
+.img-2home img {
+   flex: 1;
+   margin: 2rem;
+   height: 18rem;
+   box-shadow: 10px 5px 10px rgb(78, 110, 200); /*bordar de sombra na imagem*/
+ }
+
+
+.seccao-segun h1{
+   margin: 4rem;
+   color: rgb(78, 110, 200);
+   text-align: left;
+   font-size: 3rem;
+   display: flex;
+}
+
+.seccao-segun p {
+   margin: 2rem;
+   text-align: left;
+   font-size: 1.5rem;
+}
+.texto-2home {
+   flex: 1;
+   height: 18rem;
+}
+
+
+.listas {
+   background-color: rgb(253, 253, 147);
+   width: 100%;
+}
+.listas h2{
+   margin-top: 2rem;
+   margin-left: 5rem;
+   font-size: 3rem;/*tamanho da fonte*/
+   text-align: left; /*posição do texto*/
+   font-weight: 900;
+   color: rgb(78, 110, 200);
+}
+
+.listas ul {
+   margin-left: 6rem;
+}
+
+  
+.button-cadastro button {
+  margin-left: 3rem;
+  padding: 5rem 40%;
+  position: center;
+  border-radius: 1rem; /*deixar a bordar redonda*/
+  border: none; /*remover a linha da borda*/
+}
+/*para o botao ficar grande*/
+
+[data-anchor="products"] {
+   background-color: rgb(78, 110, 200);
+   color: black;
+   font-weight: 900;
+   font-size: 1.5rem;
+   border: none; /*remover a linha da borda*/
+   padding: 0.2rem 1rem;
+   cursor: pointer; /*mudar o cursor ao passar no botao*/
+   margin: auto;
+   width: 80%;
+   text-align: center;
+   text-decoration: none; /*tirar linha de baixo do link*/
+   border-radius: 1rem; /*deixar a bordar redonda*/
+   padding: 0 2rem;
+   transition: .2s ease-in-out;
+   display: block;
+}
+
+[data-anchor="products"]:hover {
+   background-color: rgb(78, 110, 200);
+   color: #fff;
+   transform: scale(1.2);
+   padding: 0 2rem;
+   border: none; /*remover a linha da borda*/
+   border-radius: 1rem; /*deixar a bordar redonda*/
+}
+
+/******************* login******************************/
+hr {
+   margin-top: 7.5rem;
+}
+
+.container-login {  
+   background-color: #ffffff78;
+   width: 100%; /* Ocupar toda a largura da tela */
+   margin: 0 auto;
+   padding: 20px;
+   border: 2px solid rgb(253, 253, 147);
+   border-radius: 10px;
+   max-width: 850px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+   display: flex;
+   text-align: center; /*posição do texto*/
+   justify-items: center;
+}
+
+.img img {
+     max-width: 23rem;
+}
+
+.img img-menor {
+   flex: 1; 
+}
+
+.login {
+   margin-left: 5rem;
+   margin-top: 8rem;
+   text-align: center; /*posição do texto*/
+}
+
+.title-login {
+   margin-bottom: 1rem;
+   font-size: 1rem;/*tamanho da fonte*/
+   text-align: center; /*posição do texto*/
+   font-weight: 400;
+   color: black;
+   
+}
+
+.input-box {
+   text-align: center; /*posição do texto*/
+   /*espaçamento das linhas*/
+   margin-bottom: 0.8rem; /*tamanho do conteiner*/
+   margin-left: 0.8rem;
+}
+ 
+.input-box label {
+   flex: 1;
+   text-align: left;
+   /*desing das perguntas*/
+   font-size: 1.2rem; /*tamanho da font*/     
+}
+
+.input-box input {
+   flex: 1;
+   /*desing caixa de resposta*/
+   width: 90%; /*comprimento da caixa de resposta*/
+   padding: 0.2rem; /*altura da caixa de resposta*/
+   border: 1px solid ; /*tamanho da bordar - tipo de bordar - cor da bordar*/
+   border-radius: 3px; /*curvatura da borda*/ 
+}
+       
+.input-box input[type] {
+   font-family: Arial black, Helvetica, sans-serif;
+   background-color: white; /*cor da barra de resposta*/
+   color: black; /*cor da fonte*/
+   cursor: pointer; /*mudar o cursor*/
+}
+       
+.input-box input[type]:hover {
+   background-color: rgb(224, 231, 251); /*mudar a cor quando passar em cima*/
+}
+
+.enviar input {
+   border-radius: 1rem; /*deixar a bordar redonda*/
+   border: none; /*remover a linha da borda*/
+   background-color: rgb(78, 110, 200);
+   color: #fff;
+   font-size: medium;
+   font-weight: 900;
+   padding: 0.5rem 6.5rem;
+   border: none; /*remover a linha da borda*/
+   border-radius: 1rem; /*deixar a bordar redonda*/
+}
+
+.esquecisenha {
+   margin-top: 1rem;
+}
+/************ cadastro ******************/
+
+
+.container-cadastro-2 {  
+   padding: auto;
+   margin-top: 2rem;
+   margin-left: 22rem;
+   width: 50%; /*tamanho do conteiner*/
+   padding: 0 2;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: #ffffff78;
+}
+
+.input-group2 {
+   text-align: center; /*posição do texto*/
+}
+
+.resp{
+   text-align: center; /*posição do texto*/
+}
+
+.enviar{
+   background-color: white;
+   border:1px solid black;
+  border-radius: 5px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-entrar {
+   display: flexbox;
+}
+
+.title-cadas h1{
+   margin-top: 1rem;
+   font-size: 3rem;/*tamanho da fonte*/
+   text-align: center; /*posição do texto*/
+   font-weight: 800;
+   color: rgb(78, 110, 200);
+   margin: 0 30% auto; /*deixa no centro*/
+}
+
+.title-resp {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   font-size: 1rem;/*tamanho da fonte*/
+   text-align: center; /*posição do texto*/
+   font-weight: 400;
+   color: black;
+}
+    
+.input-box2 {
+   padding: auto;
+   width: 63%;
+   margin-bottom: 1rem;
+}
+       
+.input-box2 label {
+   /*desing das perguntas*/
+   font-size: 1.2rem; /*tamanho da font*/     
+   font-size: 800;
+}
+
+.input-box2 input {
+   /*desing caixa de resposta*/
+   margin-left: 2rem;
+   width: 140%; /*comprimento da caixa de resposta*/
+   padding: 0.2rem; /*altura da caixa de resposta*/
+   border: 1px solid ; /*tamanho da bordar - tipo de bordar - cor da bordar*/
+   border-radius: 3px; /*curvatura da borda*/ 
+}
+       
+.input-box2 input[type] {
+   font-family: Arial black, Helvetica, sans-serif;
+   background-color: white; /*cor da barra de resposta*/
+   color: black; /*cor da fonte*/
+   cursor: pointer; /*mudar o cursor*/
+}
+       
+.input-box2 input[type]:hover {
+   background-color: rgb(202, 210, 249); /*mudar a cor quando passar em cima*/
+}
+
+.input-box2 select {
+   text-align: left;
+   margin-bottom: 1rem;
+   margin-left: 2rem;
+   width: 95%;
+   border-radius: 0.2rem; /*deixar a bordar redonda*/
+   border: 1px solid; /*remover a linha da borda*/
+   font-size: 1.2rem;
+   cursor: pointer; /*mudar o cursor ao passar no botao*/
+}
+/**********sobre ***********/
+.title-1 {
+   margin-top: 2rem;
+   background-color: rgb(253, 253, 147);
+   margin-left: 2rem;
+   margin-bottom: 0.8rem;
+   font-size: 1.5rem;/*tamanho da fonte*/
+   text-align: center; /*posição do texto*/
+   font-weight: 400;
+   color: black;
+}
+
+ .title {
+   background-color: rgb(253, 253, 147);
+   margin-top: 2rem;
+   margin-left: 2rem;
+   margin-bottom: 0.8rem;
+   font-size: 1.5rem;/*tamanho da fonte*/
+   text-align: center; /*posição do texto*/
+   font-weight: 400;
+   color: black;
+}
+
+.p {
+   margin: 1rem;
+   background-color: rgb(253, 253, 147);
+   text-align: left;
+   font-size: 1.5rem;
+}
+
+/*desing dos botoes rede*/
+ .button-menu-rede {
+   text-align: justify;
+   height: 3rem;
+   margin-top: 0.5rem;
+}
+
+ .button-menu-rede button {
+   padding: 0 1rem;
+   
+   border-radius: 1rem; /*deixar a bordar redonda*/
+   border: none; /*remover a linha da borda*/
+}
+section {
+   background-color: rgb(253, 253, 147);
+}
+
+/*duvidas frequentes0*/
+.faq-container {
+   margin-left: 2rem;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.faq-item {
+   margin-bottom: 0.5rem;
+}
+
+.question {
+   margin-left: 2rem;
+   margin-bottom: 0.5rem;
+}
+
+.answer {
+   margin-left: 4rem;
+}
+
+.answer p {
+   margin: 0;
+   color:rgb(78, 110, 200);
+}
+
+.faq-item.active .answer {
+   display: block;
+}
+
+.button-menu-rede img {
+   height: 1.5rem;
+   padding: 1 0;
+   margin-right: 2rem;
+   margin-left: 2rem;
+}
+
+.criadores {
+   display: flex;
+   justify-content: center;
+}
+
+.cri1 {
+   flex: 1;
+
+}
+.criadores img {
+   width: 80px;
+   border-radius: 5rem;
+   margin-right: 2rem;
+}
+
+.criadores p {
+   font-size: 1.5rem;
+   margin-left: 1rem;
+
+
+}
+/**************************   ATIVIDADES **********************/
+
+
+.sugestao-tarefas{
+   width: 95%;
+   margin-left: 3rem;
+}
+.sugestao-tarefas h2{
+   text-align: center;
+   margin: 3rem;
+   font-size: 3rem;
+
+ }
+ .sugestao-tarefas ul{
+   margin: 1rem;
+ }
+
+ .atividades {
+   display: flex;
+   font-size: 2rem;
+   width: 100%;
+ }
+
+ .ati1{
+   flex: 1
+ }
+.ati2{
+   flex: 1
+}
+
+
+/*************************   FOOTER ***************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+footer{
+   margin-top: 8rem;
+   background-color: rgb(78, 110, 200);
+   padding: 20px 0;
+}
+
+.footer {
+   position: sticky;
+}
+
+.container-footer{
+   max-width: 1700px;
+   padding: 0 2%;
+}
+
+.row-footer{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footer-col{
+   width: 30%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+   font-size: 22px;
+   color: white;
+   margin-bottom: 20px;
+   font-weight: 500;
+   position: relative;
+   text-transform: uppercase;
+}
+
+.footer-col ul{
+   list-style: none;
+}
+
+.footer-col ul li{
+   margin: 10px 0;
+}
+
+.footer-col ul li a{
+   font-size: 16px;
+   text-transform: capitalize;
+   color: white;
+   text-decoration: none;
+   font-weight: 300;
+   display: block;
+   transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+   color: #cecdcd;
+   padding-left: 10px;
+}
+
+.footer-col .medias-socias{
+   margin-top: 30px;
+}
+
+.footer-col .medias-socias a{
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+   margin: 0 10px 10px 0;
+   text-decoration: none;
+   border-radius: 50%;
+   color: white;
+   border: 1px solid white;
+   transition: all 0.5s ease;
+}
+
+.footer-col .medias-socias a i{
+   font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+   color: #415aca;
+   background-color: white;
+}
+
+.footer-col .form-sub input{
+   width: 100%;
+   padding: 10px;
+   font-size: 15px;
+   outline: none;
+   border: 1px solid white;
+   color: white;
+   background-color: #415aca;
+}
+
+.footer-col .form-sub input::placeholder{
+   color: white;
+}
+
+.footer-col .form-sub button{
+   width: 100%;
+   margin-top: 10px;
+   padding: 10px; 
+   font-size: 17px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   color: #415aca;
+   border-radius: 3px;
+   font-weight: bold;
+   background-color: white;        
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+   .footer-col{
+       width: 50%;
+       margin-bottom: 30px;
+   }
+}
+@media (max-width:600px) {
+   .footer-col{
+       width: 100%;
+   }
+}
+
+.final h1 {
+   font-size: 20px;
+   color: white;
+   margin-top: 2rem;
+   position: relative;
+   text-transform: uppercase;
+} 
+
+.final p {
+   font-size: 20px;
+   color: white;
+   position: relative;
+   text-transform: uppercase;
+}
