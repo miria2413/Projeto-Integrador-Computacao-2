@@ -9,7 +9,7 @@
 }
 
 body {
-   background: url(./img/images\ \(1\).jpg);
+   background: url(/static/img/background.jpg);
 }
 
 .fundo {
