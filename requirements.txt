@@ -31,8 +31,8 @@ psutil==5.9.5
 pure-eval==0.2.2
 Pygments==2.15.1
 python-dateutil==2.8.2
-pywin32==306
-pyzmq==25.0.2
+#pywin32==306
+pyzmq
 six==1.16.0
 sqlparse==0.5.0
 stack-data==0.6.2

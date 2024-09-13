@@ -15,9 +15,8 @@ app.secret_key = 'teste'
 # Conexão com o banco de dados MySQL
 conn = mysql.connector.connect(
     host="localhost",
-    port=3306,
-    user="root",
-    password="N&na9118",
+    user="tanahora",
+    password="tanahora",
     database="tanahora"
 )
 cursor = conn.cursor()
@@ -25,11 +24,12 @@ cursor = conn.cursor()
 # Rota para a página de inical
 @app.route('/')
 def pagina_login():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/home')
 def home_inicial():
-    return render_template('home.html')
+    return render_template('index.html')
+
 
 # Rota para a página de login
 @app.route('/login')
@@ -54,7 +54,7 @@ def sobre2():
 # Rota para a página de cadastro responsável
 @app.route('/cadastro')
 def cadastro():
-    return render_template('cadastro1.html')
+    return render_template('cadastrop.html')
 
 # Rota para cadastro dependente
 @app.route('/cadastro2')
