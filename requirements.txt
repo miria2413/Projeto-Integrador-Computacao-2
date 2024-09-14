@@ -10,6 +10,8 @@ decorator==5.1.1
 Django==5.0.4
 executing==1.2.0
 Flask==3.0.3
+flask-sqlalchemy
+flask-login
 ipykernel==6.23.0
 ipython==8.13.2
 itsdangerous==2.2.0

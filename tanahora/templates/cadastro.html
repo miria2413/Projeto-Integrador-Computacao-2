@@ -29,9 +29,9 @@
                     </a>
                     <!-- *** MENU *** -->
                     <ul class="nav-list">
-                        <li><a data-anchor="product" href="sobreg"> Sobre </a></li>
+                        <li><a data-anchor="product" href="sobre"> Sobre </a></li>
                         <li><a data-anchor="product" href="home"> Home </a></li>                            
-                        <li class="botao"><a data-anchor="product" href="login"> Login </a></li>
+                        <li class="botao-cad"><a data-anchor="product" href="login"> Login </a></li>
                     </ul>
                 </nav>
             </header>
@@ -51,84 +51,36 @@
                                 <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome." required>
                             </div>
                             <div class="input-box2">
-                                <label for="nick"> Como você Prefere ser Chamado:</label>
-                                <input id="nick" type="text" name="nick" placeholder="Digite seu sobrenome." required>
+                                <label for="nickname"> Como você Prefere ser Chamado:</label>
+                                <input id="nickname" type="text" name="nickname" placeholder="Digite seu apelido." required>
                             </div> 
                             <div class="input-box2">
                                 <label for="date">Data de Nascimento:</label>
-                                <input id="date" type="date" name="date" placeholder="12/03/1999" required>
+                                <input id="birthdate" type="date" name="date" placeholder="12/03/1999" required>
                             </div> 
                             <div class="input-box2">
                                 <label for="email"> E-mail:</label>
                                 <input id="email" type="email" name="email" placeholder="Digite seu E-mail." required>
                             </div> 
                             <div class="input-box2">
-                                <label for="telefone"> Celular:</label>
-                                <input id="telefone" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx " required>
+                                <label for="telephone"> Celular:</label>
+                                <input id="telephone" type="tel" name="telephone" placeholder="(xx) xxxxx-xxxx " required>
                             </div>  
                             <div class="input-box2">
-                                <label for="number"> N° de Depedentes:</label>
-                                <input id="number" type="tel" name="number" placeholder="ex. 2 " required>
-                            </div>
-                            <div class="input-box2">
                                 <label for="password"> Senha:</label>
                                 <input id="password" type="password" name="password" placeholder="Digite sua senha. " required>
                             </div> 
                             <div class="input-box2">
-                                <label for="genero"> Gênero:</label>
-                                <input id="genero" type="text" name="genero" placeholder="Digite. " required>
+                                <label for="gender"> Gênero:</label>
+                                <input id="gender" type="text" name="gender" placeholder="Digite. " required>
                             </div>         
                         </div>
-                        <div class="depen">
-                            <h1> Cadastro Dependente </h1>
-                            <div class="barra-horizontal"></div>
-        
-                            <input type="hidden" id="resp_id"  name="resp_id" value="{{ resp_id }}"> 
-                            <div class="input-box2">
-                                <label for="firstname">Primeiro Nome</label>     
-                                <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome." required>
-                            </div>
-                            <div class="input-box2">
-                                <label for="lastname"> Sobrenome:</label>
-                                <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome." required>
-                            </div>
-                            <div class="input-box2">
-                                <label for="nick"> Como você Prefere ser Chamado:</label>
-                                <input id="nick" type="text" name="nick" placeholder="Digite seu sobrenome." required>
-                            </div>
-                            <div class="input-box2">
-                                <label for="date">Data de Nascimento:</label>
-                                <input id="date" type="date" name="date" placeholder="12/03/1999" required>
-                            </div>
-                            <div class="input-box2">
-                                <label for="email"> E-mail:</label>
-                                <input id="email" type="email" name="email" placeholder="Digite seu E-mail." required>
-                            </div>
-                            <div class="input-box2">
-                                <label for="telefone"> Celular:</label>
-                                <input id="telefone" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx " required>
-                            </div>      
-                            <div class="input-box2">
-                                <label for="password"> Senha:</label>
-                                <input id="password" type="password" name="password" placeholder="Digite sua senha. " required>
-                            </div>
-                            <div class="input-box2">
-                                <label for="genero"> Gênero:</label>
-                                <input id="genero" type="text" name="genero" placeholder="Digite. " required>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lembrar">
-                        <input type="checkbox"/>
-                        <p> Lembrar - me</p>
                     </div>
                     <!-- <div class="enviar" style="background-color: orange;">                  
                     <button type="submit" >Enviar</button> <br><br> -->    
                     <div class="enviar">
                         <input type="submit" >
-                    </div>
-                    <p class="esqueceu"> Esqueceu sua Senha? <a href="#"> Clique Aqui.</a></p>                     
+                    </div>                     
                 </form>
             </div> 
             <footer id="footer-sobre">
