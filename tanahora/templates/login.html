@@ -15,54 +15,54 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/static/style.css">
         <script defer src="./javascri.js"></script>
     </head>
     <body>
         <div class="fundo">
             <header class="header">
                 <nav class="nav">
-                    <a href="index.html" class="logo">
+                    <a href="home" class="logo">
                         <h1 > Tá na H
                             <i class="fa fa-clock-o" aria-hidden="true"></i> ra... 
                         </h1>
                     </a>
                     <!-- *** MENU *** -->
                     <ul class="nav-list">
-                        <li><a data-anchor="product" href="sobreg.html"> Sobre </a></li>
-                        <li><a data-anchor="product" href="index.html"> Home </a></li>                            
-                        <li class="botao"><a data-anchor="product" href="cadastro.html"> Cadastra-se </a></li>
+                        <li><a data-anchor="product" href="sobre"> Sobre </a></li>
+                        <li><a data-anchor="product" href="home"> Home </a></li>                            
+                        <li class="botao"><a data-anchor="product" href="cadastro"> Cadastra-se </a></li>
                     </ul>
                 </nav>
             </header>
             <div class="corpo">
-                <div class="img-index">
-                    <img  src="./img/images (6).jpg" alt="">
+                <div class="img-home">
+                    <img  src="/static/img/images (6).jpg" alt="">
                 </div> 
                 <div class="box-label">
-                    <form action="">
+                    <form method="POST" action="/login">
                         <h1> Login </h1>
                         <div class="barra-horizontal"></div>
                         <div class="campo-input">
                             <label for="email"> Seu E-mail * :</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" name="email">
                         </div>
     
                         <div class="campo-input">
                             <label for="password"> Sua Senha * :</label>
-                            <input type="password" id="password">
+                            <input type="password" id="password" name="password">
                         </div>
     
                         <div class="lembrar">
-                            <input type="checkbox"/>
+                            <input type="checkbox" id="lembrar" name="lembrar"/>
                             <p> Lembrar - me</p>
                         </div>
 
-                        <button id="entrar-login"> Entrar </button>
-                            
-                        <p class="esqueceu"> Esqueceu sua Senha? <a href="#"> Clique Aqui.</a></p> 
-                        
+                        <div class="enviar">
+                            <input type="submit" >
+                        </div>
                     </form>
+                    <p class="esqueceu"> Esqueceu sua Senha? <a href="#"> Clique Aqui.</a></p> 
                 </div>
             </div>
             <footer>
