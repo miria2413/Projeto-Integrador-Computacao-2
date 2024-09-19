@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Playwrite+CU:wght@100..400&display=swap');
 /*pagina index*/
 * {
@@ -9,7 +10,8 @@
 }
 
 body {
-   background: url(/static/img/background.jpg);
+   background: url(./img/background.jpg); 
+   
 }
 
 .fundo {
@@ -18,7 +20,6 @@ body {
    margin: 100px 150px;
    
 }
-
 .header {
    margin: 3px 20px;
    padding: 10px;
@@ -32,25 +33,20 @@ body {
    
    
 }
-
 .nav-list {
    display: flex;
    gap: 20px;
    list-style: none;
 }
-
-
 .nav-list a {
    font-size: 19px;
    padding-block: 16px;
    color: black;
 
 }
-
 .nav-list li {
    text-decoration: none;
 }
-
 li.botao {
    background: rgb(171, 171, 226);
    border-radius: 10px;
@@ -58,31 +54,27 @@ li.botao {
    cursor: pointer; /*mudar o cursor ao passar no botao*/
    height: 30px;
 }
-
 li.botao a {
    color: blue;
    font-size: 25px;
    cursor: pointer; /*mudar o cursor ao passar no botao*/
 }
-
 .corpo {
    margin: 0px 30px;
    padding: auto;
    display: flex block;
+   height: 100vh; /* Preenche a altura total da viewport */
 
 }
-
 .texto-index {
    background: rgb(237, 244, 252);
 }
-
 .texto-index h1 {
    font-family: 'Courier New', sans-serif;
    color: blue;
    margin: 20px;
    font-size: 50px;
 }
-
 .texto-index button {
    margin: 30px;
    background: rgb(171, 171, 226);
@@ -92,12 +84,10 @@ li.botao a {
    border: 0;
    font-size: 20px;
 }
-
 .texto-index p { 
    margin: 30px;
    font-size: 30px;
 }
-
 strong {
    color: blue;
 }
@@ -106,16 +96,12 @@ strong {
    border-radius: 40%;
 
 }
-
-
 footer {
    
    padding: 30px;
    font-size: 15px;
    
 }
-
-
 /*pagina login*/
 .box-label {
    margin: 30px;
@@ -128,14 +114,12 @@ form {
    padding: 100px;
    
 }
-
 .barra-horizontal {
    background-color: rgb(171, 171, 226);
    height: 5px;
    margin: 5px 0px;
    
 }
-
 .campo-input {
 
    display: flex;
@@ -143,14 +127,12 @@ form {
    gap: 10px;
 
 }
-
 .lembrar {
    display: flex;
    gap: 8px;
    margin: 15px;
 
 }
-
 #entrar-login {
    padding: 10px;
    margin: 0px 100px;
@@ -165,96 +147,72 @@ form {
    /*button duas cor
    background-image: linear-gradient (#256a8a, #3393c1); */
 }
-
 input {
    padding: 0px 90px ;
    border-radius: 5px;
 }
-
 .esqueceu {
    text-align: center;
    margin: 5px;
 }
-
-
 /*sobre*/ 
-
 #sobre {
    margin: 30px 60px;
    font-size: 20px;
    gap: 10px;
    background: rgb(237, 244, 252);
 }
-
 #sobre h1 {
    color: blue;
 }
-
 .somos {
    padding: 30px 50px;
 }
-
 .obj {
    gap: 10px;
    padding: 30px 50px;
 }
-
 .ideal {
    padding: 0px 50px;
 }
-
 .img-sob {
    padding: 30px 50px;
    display: flex;
    gap: 150px;
 }
-
 .img-sob img{
    padding: 10px;
    height: 50px;
    width: 50px;
    border-radius: 100%;
 }
-
 .segunda {
    gap: 10px;
    padding: 30px 50px;
 }
-
-
 #footer-sobre {
    font-size: 20px;
    gap: 10px;   
 }
-
 .fo-sobre {
    display: flex;
 }
-
 .footer-sob {
    padding: 0px 75px ;
 }
-
 .footer-sob h4 {
    font-size: 25px;
 }
-
 .footer-sob a {
    margin: 8px;
 }
-
 .final-sob {
    padding: 30px;
 }
-
-
-
 /*cadastro */
-
 #cadastro {
    padding: 0px 30px;
 }
-
 li.botao-cad {
    background: rgb(171, 171, 226);
    border-radius: 10px;
@@ -262,7 +220,6 @@ li.botao-cad {
    cursor: pointer; /*mudar o cursor ao passar no botao*/
    height: 30px;
 }
-
 li.botao-cad a {
    color: blue;
    font-size: 25px;
@@ -273,19 +230,15 @@ li.botao-cad a {
    gap: 10px;
    background: rgb(237, 244, 252);
 }
-
 .respo {
    padding: 0px 200px;
    gap: 10px;
 }
-
-
 .input-box2 {
    display: flex;
    flex-direction: column;
    height: 50px;
 }
-
 .enviar {
    text-align: auto;
 }
@@ -297,4 +250,159 @@ li.botao-cad a {
    width: 100px;
    border: 0;
    font-size: 20px;
+}
+
+/**************************************************************************/
+
+/* Estiliza os títulos h1 */
+.exemplos h1 {
+   margin-top: 5rem;
+   font-size: 2.5rem; /* Tamanho da fonte */
+   color: #132c72; /* Cor do texto */
+   text-align: center; /* Alinha o texto ao centro */
+   letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+.exemplos {
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+   
+}
+
+/* Estiliza os inputs dentro das seções */
+.exemplos input {
+    border: 3px solid red;
+    width: 30rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+.exemplos button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #30475E; /* Cor de fundo do botão */
+    color: #f8f5f7; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+.exemplos button:hover {
+   color: #f50c52;
+    background-color: #fed1e7; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+/**************************perfil**************************/
+.container {
+   display: flex;
+}
+
+.profile-header {
+   /* Estilos para o cabeçalho */
+}
+
+.sidebar {
+   /* Estilos para o menu lateral */
+}
+
+.main-content {
+   /* Estilos para o conteúdo principal */
+}
+
+@media (max-width: 768px) {
+    .exemplos h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+    .exemplos input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+   .exemplos h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    .exemplos input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    .exemplos button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
 }
