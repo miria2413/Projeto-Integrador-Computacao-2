@@ -22,28 +22,29 @@
         <div class="fundo">
             <header class="header">
                 <nav class="nav">
-                    <a href="home" class="logo">
+                    <a href="/dependente" class="logo">
                         <h1 > Tá na H
-                            <i class="fa fa-clock-o" aria-hidden="true"></i> ra... 
+                            <i class="fa fa-clock-o" aria-hidden="true"></i> ra...
                         </h1>
                     </a>
                     <!-- *** MENU *** -->
                     <ul class="nav-list">
+                        <li><a data-anchor="product" href="/dependente"> Home </a></li>
+                        <li><a data-anchor="product" href="/responsavel/atividade"> Atividades </a></li>
+                        <li><a data-anchor="product" href="#"> Calendario </a></li>
                         <li><a data-anchor="product" href="/sobre"> Sobre </a></li>
-                        <li><a data-anchor="product" href="/login"> Login </a></li>                            
-                        <li class="botao"><a data-anchor="product" href="/cadastro"> Cadastra-se </a></li>
                     </ul>
                 </nav>
             </header>
             <div class="corpo">
-                <div class="texto-home">
+                <div class="texto-index">
                     <h1> Tá na Hora ... </h1>
+                    <p>  Olá {{usuario.nickname}}, filho de {{usuario.responsavel.nickname}} </p>
                     <p >  Uma forma <strong> DIVERTIDA </strong> de Interação em Família.</p>
                     <p> Esta web site é uma ferramenta que permite as famílias, de maneira lúdica e educativa, a <strong>DESENVOLVER</strong> estratégias que auxilie na modulação de comportamento e no estreitamento dos <strong>LAÇOS FAMILIARES.</strong> </p>
-                    <button> <a data-anchor="product" href="cadastro"> Cadastra-se </a> </button>
                 </div>
-                <div class="img-home">
-                    <img  src="/static/img/familia2.jpg" alt="">
+                <div class="img-index">
+                    <img  src="./img/familia 2.jpg" alt="">
                 </div> 
             </div>
             <footer>

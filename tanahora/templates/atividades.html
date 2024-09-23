@@ -15,56 +15,68 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./tanahora/static/style.css">
-        <script defer src="./javascri.js"></script>
+        <link rel="stylesheet" href="/static/style.css">
+        <script defer src="/javascri.js"></script>
     </head>
     <body>
         <div class="fundo">
             <header class="header">
                 <nav class="nav">
-                    <a href="index.html" class="logo">
+                    <a href="/index" class="logo">
                         <h1 > Tá na H
                             <i class="fa fa-clock-o" aria-hidden="true"></i> ra... 
                         </h1>
                     </a>
                     <!-- *** MENU *** -->
                     <ul class="nav-list">
-                        <li><a data-anchor="product" href="homer.html"> Home </a></li>
-                        <li><a data-anchor="product" href="ativi.html"> Atividades </a></li>
-                        <li><a data-anchor="product" href="add.html"> Adicionar Dependente </a></li>                            
-                        <li><a data-anchor="product" href="perfil.html"> Perfil </a></li>
+                        <li><a data-anchor="product" href="/responsavel"> Home </a></li>
+                        <li><a data-anchor="product" href="/responsavel/atividade"> Atividades </a></li>
+                        <li><a data-anchor="product" href="/responsavel/dependente/adicionar"> Adicionar Dependente </a></li>                            
+                        <li><a data-anchor="product" href="/perfil"> Perfil </a></li>
                         <li><a data-anchor="product" href="#"> Calendario </a></li>
-                        <li><a data-anchor="product" href="sobrer.html"> Sobre </a></li>
+                        <li><a data-anchor="product" href="/sobre"> Sobre </a></li>
                     </ul>
                 </nav>
             </header>
-            <div class="container">
-                <div class="profile-header">
-                    <img src="user.png" alt="Foto de Perfil" id="profile-pic">
-                    <label for="upload-photo">Adicionar Foto</label>
-                    <input type="file" id="upload-photo" style="display: none;">
+            <main>
+                <section class="exemplos">
+                    <h1> Ideias de atividades e brincadeiras.</h1>
+                    <div class="barra-horizontal"></div>
+                </section>
+                <section class="exemplos">
+                    <input type="text" placeholder="Digite uma atividade ou a idade da criança." id="campo-pesquisa">
+                    <button onclick="pesquisar()"> Pesquisar </button>
+                </section>
+                <section class="resultados-pesquisa" id="resultados-pesquisa">
+            </main>
+            <section>
+                <div>
+                    <h1>
+                        Adicionar atividade
+                    </h1>
                 </div>
-                <div class="sidebar">
-                    <ul>
-                        <li><a href="#">Editar Perfil</a></li>
-                    </ul>
-                </div>
-                <div class="main-content">
-                </div>
-            </div>
+                <div class="barra-horizontal"></div>
+            </section>
+            <section>
+                <input type="text" placeholder="Adicionar uma tarefa">
+                <input type="submit">
+
+            </section>
+            <script src="dados.js"></script>
+            <script src="javascri.js"></script>
             <footer id="footer-sobre">
                 <div class="fo-sobre">
                     <div class="footer-sob">
                         <h4>Tá na Hora...</h4>
                         <ul>
-                            <li><a href="sobre"> Quem Somos? </a></li>
+                            <li><a href="/sobre"> Quem Somos? </a></li>
                             <li><a href="#"> Política de Privacidade. </a></li>
                         </ul>
                     </div>
                     <div class="footer-sob">
                         <h4>Obter ajuda</h4>
                         <ul>
-                            <li><a href="sobre">Duvidas?</a></li>
+                            <li><a href="/sobre">Duvidas?</a></li>
                         </ul>
                     </div>
                     <div class="footer-sob">
@@ -81,8 +93,7 @@
                     <p> &copy;Projeto Integrador em Computação II </p>
                     <p> &copy; Desenvolver um software com framework web que utilize banco de dados, script web, nuvem, uso de API, acessibilidade e controle de versão.</p>
                 </div>
-            </footer>   
-            <script src="./javascri.js"></script>
-        </div>  
+            </footer>
+        </div>   
     </body>
-</html>
+</html> 
