@@ -15,39 +15,33 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./tanahora/static/style.css">
+        <link rel="stylesheet" href="/static/style.css">
         <script defer src="./javascri.js"></script>
     </head>
     <body>
         <div class="fundo">
             <header class="header">
                 <nav class="nav">
-                    <a href="index.html" class="logo">
+                    <a href="/index" class="logo">
                         <h1 > Tá na H
                             <i class="fa fa-clock-o" aria-hidden="true"></i> ra... 
                         </h1>
                     </a>
                     <!-- *** MENU *** -->
                     <ul class="nav-list">
-                        <li><a data-anchor="product" href="homer.html"> Home </a></li>
-                        <li><a data-anchor="product" href="ativi.html"> Atividades </a></li>
-                        <li><a data-anchor="product" href="add.html"> Adicionar Dependente </a></li>                            
-                        <li><a data-anchor="product" href="perfil.html"> Perfil </a></li>
-                        <li><a data-anchor="product" href="#"> Calendario </a></li>
-                        <li><a data-anchor="product" href="sobrer.html"> Sobre </a></li>
+                        <li><a data-anchor="product" href="/index"> Home </a></li>
                     </ul>
                 </nav>
             </header>
             <div id="cadastro">
-                <form class="form-cadastro">
+                <form class="form-cadastro" method="POST" action="/cadastro">
                     <div class="cadastros">
                         <div class="respo">
-                            <h1> Adicionar Dependente </h1>
+                            <h1> Cadastro Responsavel </h1>
                             <div class="barra-horizontal"></div>
         
-                            <input type="hidden" id="resp_id"  name="resp_id" value="{{ resp_id }}"> 
                             <div class="input-box2">
-                                <label for="firstname">Primeiro Nome</label>     
+                                <label for="firstname">Primeiro Nome:</label>     
                                 <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome." required>
                             </div>
                             <div class="input-box2">
@@ -55,36 +49,42 @@
                                 <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome." required>
                             </div>
                             <div class="input-box2">
-                                <label for="nick"> Como você Prefere ser Chamado:</label>
-                                <input id="nick" type="text" name="nick" placeholder="Digite seu sobrenome." required>
-                            </div>
+                                <label for="nickname"> Como você Prefere ser Chamado:</label>
+                                <input id="nickname" type="text" name="nickname" placeholder="Digite seu apelido." required>
+                            </div> 
                             <div class="input-box2">
-                                <label for="date">Data de Nascimento:</label>
-                                <input id="date" type="date" name="date" placeholder="12/03/1999" required>
-                            </div>
+                                <label for="birthdate">Data de Nascimento:</label>
+                                <input id="birthdate" type="date" name="birthdate" placeholder="12/03/1999" required>
+                            </div> 
                             <div class="input-box2">
                                 <label for="email"> E-mail:</label>
                                 <input id="email" type="email" name="email" placeholder="Digite seu E-mail." required>
-                            </div>
+                            </div> 
                             <div class="input-box2">
-                                <label for="telefone"> Celular:</label>
-                                <input id="telefone" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx " required>
-                            </div>      
+                                <label for="telephone"> Celular:</label>
+                                <input id="telephone" type="tel" name="telephone" placeholder="(xx) xxxxx-xxxx " required>
+                            </div>
                             <div class="input-box2">
                                 <label for="password"> Senha:</label>
                                 <input id="password" type="password" name="password" placeholder="Digite sua senha. " required>
-                            </div>
+                            </div> 
                             <div class="input-box2">
-                                <label for="genero"> Gênero:</label>
-                                <input id="genero" type="text" name="genero" placeholder="Digite. " required>
-                            </div>
+                                <label for="gender"> Gênero:</label>
+                                <input id="gender" type="text" name="gender" placeholder="Digite. " required>
+                            </div>         
                         </div>
+                    </div>
+                    
+                    <div class="lembrar">
+                        <input type="checkbox"/>
+                        <p> Lembrar - me</p>
                     </div>
                     <!-- <div class="enviar" style="background-color: orange;">                  
                     <button type="submit" >Enviar</button> <br><br> -->    
                     <div class="enviar">
-                        <input type="submit">
-                    </div>                     
+                        <input type="submit" >
+                    </div>
+                    <p class="esqueceu"> Esqueceu sua Senha? <a href="#"> Clique Aqui.</a></p>                     
                 </form>
             </div> 
             <footer id="footer-sobre">
@@ -92,14 +92,14 @@
                     <div class="footer-sob">
                         <h4>Tá na Hora...</h4>
                         <ul>
-                            <li><a href="sobreg.html"> Quem Somos? </a></li>
+                            <li><a href="sobre"> Quem Somos? </a></li>
                             <li><a href="#"> Política de Privacidade. </a></li>
                         </ul>
                     </div>
                     <div class="footer-sob">
                         <h4>Obter ajuda</h4>
                         <ul>
-                            <li><a href="sobre.html">Duvidas?</a></li>
+                            <li><a href="sobre">Duvidas?</a></li>
                         </ul>
                     </div>
                     <div class="footer-sob">
