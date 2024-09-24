@@ -35,6 +35,3 @@ def create_app():
     return app
 
 
-# Cria tabelas a partir do models.py no Banco de dados 
-# with create_app().app_context():
-#     db.create_all()

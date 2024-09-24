@@ -1,6 +1,13 @@
 from flask_login import UserMixin
 from . import db
 
+
+UsuarioAtividade = db.Table(
+    'usuario_atividade',
+    db.metadata,
+    db.Column('usuario_id', db.ForeignKey('usuario.id')),
+    db.Column('atividade_id', db.ForeignKey('atividade.id')))
+
 class Usuario(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     resp_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
@@ -12,4 +19,20 @@ class Usuario(UserMixin, db.Model):
     birthdate = db.Column(db.Date())
     telephone = db.Column(db.String(20))
     gender = db.Column(db.String(20))
-    responsavel = db.relationship('Usuario', remote_side=[id], )
+    responsavel = db.relationship('Usuario', remote_side=[id])
+    atividades = db.relationship('Atividade', secondary=UsuarioAtividade, backref='Atividade')
+
+class CategoriaAtividade(db.Model):
+    id = id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(100))
+    descricao = db.Column(db.String(1000))
+
+class Atividade(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    categ_id = db.Column(db.Integer, db.ForeignKey('categoria_atividade.id'))
+    descricao = db.Column(db.String(1000))
+    idade_minima = db.Column(db.Integer)
+    idade_maxima = db.Column(db.Integer)
+    categoria = db.relationship('CategoriaAtividade', remote_side=[id])
+    usuarios = db.relationship('Usuario', secondary=UsuarioAtividade, backref='Usuario')
+

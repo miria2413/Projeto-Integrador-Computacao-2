@@ -28,27 +28,43 @@ Um site voltado para a Interação Familiar com dicas de atividades e brincadeir
 ### Instalando
 
 1. Criando o ambiente virtual Python e instalando os pacotes necessários
+```shell
 python -m venv venv
 
 source venv/bin/activate
 pip install -r requirements.txt
-
+```
 
 2. Instalar o banco de dados MySQL ou MariaDB e criar a base de dados/usuário
+```sql
 create user tanahora identified by 'tanahora';
 create database tanahora;
 grant all privileges on tanahora.* to tanahora;
-
+```
 
 3. Realizar a migração das tabelas para o banco
-No terminal:
+No terminal, pasta do projeto:
+```shell
 source venv/bin/activate
 python
+```
 
 No python: Cria tabelas a partir do models.py no Banco de dados
+```python
 from tanahora import db, app_context, Models 
 with create_app().app_context():
   db.create_all()
+
+exit()
+```
+
+4. Executando
+No terminal, pasta do projeto:
+```shell
+source venv/bin/activate
+flask --app tanahora run --debug
+```
+
 
 ## :memo: Licença
 
