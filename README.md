@@ -51,7 +51,7 @@ python
 
 No python: Cria tabelas a partir do models.py no Banco de dados
 ```python
-from tanahora import db, app_context, Models 
+from tanahora import db, create_app, models 
 with create_app().app_context():
   db.create_all()
 
