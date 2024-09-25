@@ -33,6 +33,5 @@ class Atividade(db.Model):
     descricao = db.Column(db.String(1000))
     idade_minima = db.Column(db.Integer)
     idade_maxima = db.Column(db.Integer)
-    categoria = db.relationship('CategoriaAtividade', remote_side=[id])
     usuarios = db.relationship('Usuario', secondary=UsuarioAtividade, backref='Usuario')
 
