@@ -6,244 +6,286 @@
    margin: 0;
    text-decoration: none;
    padding: 0;
+   box-sizing: border-box;
    font-family: "Nerko One", cursive, sans-serif;
 }
 
 body {
-   background: url(./img/background.jpg); 
-   
+  
+   width: 100%;
+   height: 100%;
+   background: url('../static/img/background.jpg'), no-repeat center center/cover;
 }
 
 .fundo {
-   background: white;
-   padding: 1px 5px;
-   margin: 100px 150px;
-   
+   background-color: #ffffff;
+   margin: 180px 180px;
+   width: 80%;
+   border-radius: 20px;
+   height: 80%;
+   box-shadow: 6px 6px 6px rgba(68, 16, 42, 0.6);
 }
+
 .header {
-   margin: 3px 20px;
-   padding: 10px;
-   
-   
+   height: 25%;
+   width: 100%;
+   padding: 10px 15px;
 }
+
 .nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   
-   
+   text-align: center;
 }
+
 .nav-list {
    display: flex;
-   gap: 20px;
+   gap: 30px;
    list-style: none;
 }
-.nav-list a {
-   font-size: 19px;
-   padding-block: 16px;
-   color: black;
 
+.nav-list a {
+   font-size: 25px;
+   color: black;
 }
+
 .nav-list li {
    text-decoration: none;
 }
-li.botao {
-   background: rgb(171, 171, 226);
-   border-radius: 10px;
-   width: 140px;
-   cursor: pointer; /*mudar o cursor ao passar no botao*/
-   height: 30px;
-}
-li.botao a {
-   color: blue;
-   font-size: 25px;
-   cursor: pointer; /*mudar o cursor ao passar no botao*/
-}
-.corpo {
-   margin: 0px 30px;
-   padding: auto;
-   display: flex block;
-   height: 100vh; /* Preenche a altura total da viewport */
 
+li.botao {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border-radius: 10px;
+   width: 160px;
+   text-align: center;
+   justify-content: center;
+   cursor: pointer;
+   height: 35px;
 }
-.texto-index {
-   background: rgb(237, 244, 252);
+
+li.botao a {
+   color: #0707087e;
+   font-size: 25px;
+   cursor: pointer;
 }
-.texto-index h1 {
-   font-family: 'Courier New', sans-serif;
-   color: blue;
-   margin: 20px;
+
+.linha-cor {
+   height: 3px;
+   background-image: radial-gradient(circle at left,rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+}
+
+.corpo {
+   margin: 35px;
+   display: flex;
+   height: 50vh;
+}
+
+.texto-home {
+   background-image: linear-gradient(rgba(59, 161, 205, .3), rgb(250, 106, 178, .3));
+   border-radius: 10px;
+}
+
+.texto-home h1 {
+   color: #4b72fd;
+   margin: 10px 15px;
+   font-weight: bold;
    font-size: 50px;
 }
-.texto-index button {
-   margin: 30px;
-   background: rgb(171, 171, 226);
+
+.texto-home button {
+   background-color: rgba(59, 161, 205, .6);
+   color: #ccc;
+   margin: 15px 50px;
    border-radius: 10px;
    width: 150px;
    height: 30px;
+   justify-content: center;
+   text-align: center;
    border: 0;
    font-size: 20px;
 }
-.texto-index p { 
-   margin: 30px;
+
+.texto-home p { 
+   margin: 15px 35px;
    font-size: 30px;
 }
+
 strong {
-   color: blue;
+   color:  #4b72fe;
 }
-.img-index img {
+
+.img-home img {
    width: 480px;
    border-radius: 40%;
+}
 
-}
 footer {
-   
-   padding: 30px;
+   padding: 10px;
    font-size: 15px;
-   
 }
+
 /*pagina login*/
 .box-label {
-   margin: 30px;
+   padding: 30px;
    display: flex;
+   font-size: 25px;
+   width: 100%;
+   flex-direction: column;
+}
+
+form {
+   width: 100%;
+   height: 100%;
+   margin: 15px;
    justify-content: center;
    align-items: center;
-   
 }
-form {
-   padding: 100px;
-   
-}
-.barra-horizontal {
-   background-color: rgb(171, 171, 226);
-   height: 5px;
-   margin: 5px 0px;
-   
-}
-.campo-input {
 
+.campo-input {
    display: flex;
    flex-direction: column;
-   gap: 10px;
+   gap: 15px;
 
 }
+
 .lembrar {
    display: flex;
-   gap: 8px;
-   margin: 15px;
+   text-align: center;
+   justify-content: center;
+   gap: 10px;
+   margin: 20px 30px;
+}
 
+#login-title {
+   margin: 0 20px;
 }
-#entrar-login {
-   padding: 10px;
-   margin: 0px 100px;
-   align-self: center;
-   width: 160px;
-   border-radius: 30px;
-   background-color: rgb(171, 171, 226);
-   border: 0;
-   color: blue;
-   font-weight: 600;
-   cursor: pointer; /*mudar o cursor ao passar no botao*/
-   /*button duas cor
-   background-image: linear-gradient (#256a8a, #3393c1); */
+
+label {
+   margin: 20px 30px 0;
 }
-input {
-   padding: 0px 90px ;
-   border-radius: 5px;
+
+#password, #email, #fC, #lastname, #nickname, 
+#birthdate, #telephone, #gender {
+   border: 2px solid pink;
+   border-radius: 15px;
+   width: 80%;
+   height: 30px;
+   text-align: center;
+   margin: 0 50px 15px;
 }
+
 .esqueceu {
    text-align: center;
    margin: 5px;
+   font-size: 20px;
 }
+
+.enviar-login input {
+   text-align: center;
+   justify-content: center;
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border-radius: 10px;
+   width: 150px;
+   height: 30px;
+   font-size: 30px;
+   border: 0;
+   margin-left: 35%;
+}
+
 /*sobre*/ 
 #sobre {
    margin: 30px 60px;
    font-size: 20px;
    gap: 10px;
+   border-radius: 15px;
    background: rgb(237, 244, 252);
 }
+
 #sobre h1 {
-   color: blue;
+   color: #00659099;
 }
+
 .somos {
    padding: 30px 50px;
 }
+
 .obj {
    gap: 10px;
    padding: 30px 50px;
 }
+
 .ideal {
-   padding: 0px 50px;
+   margin: 0 50px;
 }
+
 .img-sob {
-   padding: 30px 50px;
+   margin: 30px 50px;
    display: flex;
-   gap: 150px;
+   gap: 180px;
 }
+
+.img-sob p {
+   font-size: 25px;
+   display: flex;
+   margin: 10px;
+}
+
 .img-sob img{
-   padding: 10px;
-   height: 50px;
+   height: 40px;
    width: 50px;
    border-radius: 100%;
+   margin: 0 10px;
+   box-shadow: 3px 3px 5px rgb(50, 50, 50);
 }
+
 .segunda {
    gap: 10px;
-   padding: 30px 50px;
+   margin: 20px 50px;
 }
+
 #footer-sobre {
    font-size: 20px;
    gap: 10px;   
 }
+
 .fo-sobre {
    display: flex;
 }
+
 .footer-sob {
-   padding: 0px 75px ;
+   flex: 1;
+   margin: 0px 75px ;
 }
+
 .footer-sob h4 {
    font-size: 25px;
+   color: #00659099;
 }
+
 .footer-sob a {
+   text-align: center;
+   justify-content: center;
    margin: 8px;
 }
 .final-sob {
    padding: 30px;
 }
+
 /*cadastro */
 #cadastro {
-   padding: 0px 30px;
+   margin: 0 130px;
 }
-li.botao-cad {
-   background: rgb(171, 171, 226);
-   border-radius: 10px;
-   width: 65px;
-   cursor: pointer; /*mudar o cursor ao passar no botao*/
-   height: 30px;
-}
-li.botao-cad a {
-   color: blue;
-   font-size: 25px;
-   cursor: pointer; /*mudar o cursor ao passar no botao*/
-}
+
 .form-cadastro {
-   padding: 30px 10px;
+   margin: 30px 0px;
+   width: 100%;
    gap: 10px;
    background: rgb(237, 244, 252);
 }
-.respo {
-   padding: 0px 200px;
-   gap: 10px;
-}
-.input-box2 {
-   display: flex;
-   flex-direction: column;
-   height: 50px;
-}
-.enviar {
-   text-align: auto;
-}
+
 .enviar input {
-   margin-left: 450px;
+   margin-left: 45%;
    padding: 0px;
    background: rgb(171, 171, 226);
    border-radius: 10px;

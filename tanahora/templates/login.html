@@ -35,14 +35,15 @@
                     </ul>
                 </nav>
             </header>
+            <div class="linha-cor"></div>
             <div class="corpo">
                 <div class="img-home">
                     <img  src="/static/img/images (6).jpg" alt="">
                 </div> 
                 <div class="box-label">
                     <form method="POST" action="/login">
-                        <h1> Login </h1>
-                        <div class="barra-horizontal"></div>
+                        <h1 id="login-title"> Login </h1>
+                        <div class="linha-cor" id="login-title"></div>
                         <div class="campo-input">
                             <label for="email"> Seu E-mail * :</label>
                             <input type="email" id="email" name="email">
@@ -54,11 +55,11 @@
                         </div>
     
                         <div class="lembrar">
-                            <input type="checkbox" id="lembrar" name="lembrar"/>
+                            <input  type="checkbox" id="lembrar" name="lembrar"/>
                             <p> Lembrar - me</p>
                         </div>
 
-                        <div class="enviar">
+                        <div class="enviar-login">
                             <input type="submit" >
                         </div>
                     </form>
