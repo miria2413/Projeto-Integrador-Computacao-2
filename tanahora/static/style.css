@@ -469,6 +469,33 @@ label {
 
 }
 
+.edit-button {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border: none;
+   color: white;
+   border-radius: 50%;
+   text-align: center;
+   text-decoration: none;
+   box-shadow: 3px 2px 5px #ccc;
+   padding: 5px 5px 0;
+   display: inline-block;
+   position: absolute;
+   /* Posiciona o botão absolutamente em relação ao container */
+   bottom: 25px;
+   /* Afasta 10px da borda inferior */
+   right: 60px;
+   /* Afasta 10px da borda direita */
+   color: white;
+   border: 2px solid #fff;
+
+   cursor: pointer;
+}
+
+
+.edit-button:hover {
+   background-image: linear-gradient(rgb(250, 106, 178, .6), rgba(59, 161, 205, .6));
+}
+
 .dados-usuario-perfil {
    padding: 0 10px;
 }
