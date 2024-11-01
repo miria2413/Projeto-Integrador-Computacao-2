@@ -7,7 +7,11 @@
    text-decoration: none;
    padding: 0;
    box-sizing: border-box;
+<<<<<<< HEAD
    font-family: "Nerko One", cursive, sans-serif;
+=======
+   font-family: "Nerko One", "cursive", sans-serif;
+>>>>>>> dd90a777b51c019cb9289461af3febd168d42606
 }
 
 body {
@@ -244,6 +248,151 @@ label {
    margin: 20px 50px;
 }
 
+<<<<<<< HEAD
+=======
+/************** atividades *****************/
+:root {
+   --cor-de-fundo: #0c1e6a;
+   --cor-clara: #000;
+   --cor-clara2: rgba(2, 7, 78, 0.9);
+   --medida-espaco-8: 8px;
+   --medida-espaco-16: 16px;
+   --medida-espaco-24: 24px;
+   --medida-espaco-32: 32px;
+   --medida-espaco-64: 64px;
+   --largura-caixa-geral: 1200px;
+} 
+ 
+.conteudo__geral {
+   
+   align-items: flex-start;
+   display: flex;
+   min-height: 100%;
+   justify-content: center;
+   padding: var(--medida-espaco-64) var(--medida-espaco-24);
+}
+ 
+.conteudo__cartoes-grid {
+   
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-column-gap: var(--medida-espaco-24);
+   grid-row-gap: var(--medida-espaco-24);
+   max-width: var(--largura-caixa-geral);
+   width: 100%;
+}
+ 
+
+@media (min-width: 540px) {
+   .conteudo__cartoes-grid {
+     grid-template-columns: repeat(2, 1fr);
+   }
+}
+ 
+@media (min-width: 960px) {
+   .conteudo__cartoes-grid {
+     grid-template-columns: repeat(4, 1fr);
+   }
+}
+ 
+.elemento__cartao {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border-radius: 20px;
+   list-style: none;
+   position: relative;
+}
+ 
+.elemento__cartao:before {
+   content: "";
+   display: block;
+   padding-bottom: 150%;
+   width: 100%;
+}
+ 
+.elemento__cartao--fundo {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   background-position: center;
+   border-radius: var(--medida-espaco-24);
+   bottom: 0;
+   filter: brightness(0.75) saturate(1.2) contrast(0.85);
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 0;
+   opacity: 0.5;
+   transform-origin: center;
+   transform: scale(1) translateZ(0);
+   transition: filter 200ms linear, transform 200ms linear;
+}
+
+.descricao-ativi {
+   background-position: center;
+   filter: brightness(0.75) saturate(1.2) contrast(0.85);
+   position: absolute;
+   transform-origin: center;
+   padding: 90px 10px;
+   color: #000000;
+   width: 100%;
+   height: 100%;
+   overflow-y: auto;
+}
+
+ 
+.elemento__cartao:hover .elemento__cartao--fundo {
+   transform: scale(1.05) translateZ(0);
+}
+ 
+
+.conteudo__cartoes-grid:hover > .elemento__cartao:not(:hover)
+   .elemento__cartao--fundo {
+   filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+   
+}
+ 
+.elemento__cartao--conteudo {
+   left: 0;
+   padding: var(--medida-espaco-24);
+   position: absolute;
+   top: 0;
+}
+ 
+.elemento__cartao--texto-categoria {
+   color: var(--cor-clara);
+   font-size: 0.9rem;
+   margin-bottom: var(--medida-espaco-8);
+   text-transform: uppercase;
+}
+ 
+.elemento__cartao--texto-titulo {
+   color: var(--cor-clara2);
+   font-size: 1.7rem;
+   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+   line-height: 1;
+
+   text-transform: uppercase;
+}
+
+#botoes-alf {
+   text-transform: uppercase;
+   display: flex;
+}
+
+#botoes-alf button {
+   cursor: pointer;
+}
+
+.letras {
+   margin: 0 5px;
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   padding: 5px 13px;
+   border: 0;
+   border-radius: 5px;
+   box-shadow: 3px 3px 3px #a4a3a3;
+}
+
+
+
+>>>>>>> dd90a777b51c019cb9289461af3febd168d42606
 #footer-sobre {
    font-size: 20px;
    gap: 10px;   
@@ -293,6 +442,121 @@ label {
    border: 0;
    font-size: 20px;
 }
+
+
+
+/************perfil resposavel ****/
+#perfil-responsavel {
+   display: flex;
+   margin: 30px 10px;
+   
+}
+
+#dados-perfil {
+   flex: 1;
+   border-right: 1px solid #222831;
+   box-shadow: 2px 0 5px #8a8c90;
+   margin: 0 20px;
+   padding: 20px 0;
+}
+
+#dados-perfil figure {
+   text-align: center;
+   justify-content: center;
+
+}
+
+#dados-perfil figure img {
+   text-align: center;
+   justify-content: center;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   box-shadow: 3px 2px 8px #45474B;
+
+}
+
+.edit-button {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border: none;
+   color: white;
+   border-radius: 50%;
+   text-align: center;
+   text-decoration: none;
+   box-shadow: 3px 2px 5px #ccc;
+   padding: 5px 5px 0;
+   display: inline-block;
+   position: absolute;
+   /* Posiciona o botão absolutamente em relação ao container */
+   bottom: 25px;
+   /* Afasta 10px da borda inferior */
+   right: 60px;
+   /* Afasta 10px da borda direita */
+   color: white;
+   border: 2px solid #fff;
+
+   cursor: pointer;
+}
+
+
+.edit-button:hover {
+   background-image: linear-gradient(rgb(250, 106, 178, .6), rgba(59, 161, 205, .6));
+}
+
+.dados-usuario-perfil {
+   padding: 0 10px;
+}
+
+.input-perfil label {
+   margin: 25px 5px;
+}
+
+.input-perfil input {
+   border: 1px solid #ccc;
+   width: 100%;
+   margin: 20px 0;
+   padding: 2px 0 2px 15px;
+   border-radius: 10px;
+   box-shadow: 2px 2px 5px #ccc;
+
+}
+
+#buttons-perfil {
+   text-align: center;
+}
+
+#buttons-perfil button {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   margin: 20px 5px 0;
+   padding: 2px 5px;
+   border: 0;
+   border-radius: 10px;
+}
+
+#buttons-perfil a {
+   text-decoration: none;
+   color: #000;
+   padding: 2px 5px;
+}
+
+#hist-atividade {
+   flex: 3;
+   margin: 30px;
+}
+
+#registro-hist {
+   height: 120px;
+   margin: 20px;
+   padding: 15px 5px;
+
+}
+
+#grafico-perfil {
+   width: 100px;
+   height: 100px;
+}
+
+/
 
 /**************************************************************************/
 
