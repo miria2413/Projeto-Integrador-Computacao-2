@@ -1,77 +1,108 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="keywords" content="HTML, CSS, JavaScript"/>    
-        <!--uso de palavras chaves-->    
-        <meta name="description" content="Desenvolvimento de um software com framework web que utilize noções de banco de dados, praticando controle de versão"/> <!--descrição so site-->   
-        <meta name="author" content="CLESIO JOSE DA SILVA CLEMENTE, LARISSA CELESTINO FERRAZ, MIRIÃ DA SILVA RIBEIRO,"> 
-        <title>TÁ NA HORA...</title>
-        <link rel="shortcut icon" href="5130logo-univesp_completo_cor-negativo.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/static/style.css">
-        <script defer src="./javascri.js"></script>
-    </head>
-    <body>
-        <div class="fundo">
-            <header class="header">
-                <nav class="nav">
-                    <a href="home" class="logo">
-                        <h1 > Tá na H
-                            <i class="fa fa-clock-o" aria-hidden="true"></i> ra... 
-                        </h1>
-                    </a>
-                    <!-- *** MENU *** -->
-                    <ul class="nav-list">
-                        <li><a data-anchor="product" href="/sobre"> Sobre </a></li>
-                        <li><a data-anchor="product" href="/index"> Home </a></li>                            
-                        <li class="botao"><a data-anchor="product" href="/cadastro"> Cadastra-se </a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="linha-cor"></div>
-            <div class="corpo">
-                <div class="img-home">
-                    <img  src="/static/img/images (6).jpg" alt="">
-                </div> 
-                <div class="box-label">
-                    <form method="POST" action="/login">
-                        <h1 id="login-title"> Login </h1>
-                        <div class="linha-cor" id="login-title"></div>
-                        <div class="campo-input">
-                            <label for="email"> Seu E-mail * :</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-    
-                        <div class="campo-input">
-                            <label for="password"> Sua Senha * :</label>
-                            <input type="password" id="password" name="password">
-                        </div>
-    
-                        <div class="lembrar">
-                            <input  type="checkbox" id="lembrar" name="lembrar"/>
-                            <p> Lembrar - me</p>
-                        </div>
-
-                        <div class="enviar-login">
-                            <input type="submit" >
-                        </div>
-                    </form>
-                    <p class="esqueceu"> Esqueceu sua Senha? <a href="#"> Clique Aqui.</a></p> 
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <!--uso de palavras chaves-->
+    <meta
+      name="description"
+      content="Desenvolvimento de um software com framework web que utilize noções de banco de dados, praticando controle de versão"
+    />
+    <!--descrição so site-->
+    <meta
+      name="author"
+      content="CLESIO JOSE DA SILVA CLEMENTE, LARISSA CELESTINO FERRAZ, MIRIÃ DA SILVA RIBEIRO,MArCEL LUCHI MARCHI, LEORNADO RODRIGUES HORIKOS"
+    />
+    <title>TÁ NA HORA...</title>
+    <link
+      rel="shortcut icon"
+      href="5130logo-univesp_completo_cor-negativo.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script defer src="./javascri.js"></script>
+  </head>
+  <body>
+    <div class="fundo">
+      <header class="header">
+        <nav class="nav">
+          <a href="home" class="logo">
+            <h1>
+              Tá na H <i class="fa fa-clock-o" aria-hidden="true"></i> ra...
+            </h1>
+          </a>
+          <!-- *** MENU *** -->
+          <ul class="nav-list">
+            <li><a data-anchor="product" href="/sobre"> Sobre </a></li>
+            <li><a data-anchor="product" href="/index"> Home </a></li>
+            <li class="botao">
+              <a data-anchor="product" href="/cadastro"> Cadastra-se </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="linha-cor"></div>
+      <div class="corpo">
+        <div class="img-home">
+          <img src="/static/img/images (6).jpg" alt="" />
+        </div>
+        <div class="box-label">
+          <form method="POST" action="/login">
+            <h1 id="login-title">Login</h1>
+            <div class="linha-cor" id="login-title"></div>
+            <div class="campo-input">
+              <label for="email"> Seu E-mail * :</label>
+              <input type="email" id="email" name="email" />
             </div>
-            <footer>
-                <div class="final">
-                    <p> &copy;Projeto Integrador em Computação II </p>
-                    <p> &copy; Desenvolver um software com framework web que utilize banco de dados, script web, nuvem, uso de API, acessibilidade e controle de versão.</p>
-                </div>
-            </footer>  
-        </div>   
-    </body>
+
+            <div class="campo-input">
+              <label for="password"> Sua Senha * :</label>
+              <input type="password" id="password" name="password" />
+            </div>
+
+            <div class="lembrar">
+              <input type="checkbox" id="lembrar" name="lembrar" />
+              <p>Lembrar - me</p>
+            </div>
+
+            <div class="enviar-login">
+              <input type="submit" />
+            </div>
+          </form>
+          <p class="esqueceu">
+            Esqueceu sua Senha? <a href="#"> Clique Aqui.</a>
+          </p>
+        </div>
+      </div>
+      <footer>
+        <div class="final">
+          <p>&copy;Projeto Integrador em Computação II</p>
+          <p>
+            &copy; Desenvolver um software com framework web que utilize banco
+            de dados, script web, nuvem, uso de API, acessibilidade e controle
+            de versão.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

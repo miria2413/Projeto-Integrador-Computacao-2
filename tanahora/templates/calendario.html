@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <!--uso de palavras chaves-->
+    <meta
+      name="description"
+      content="Desenvolvimento de um software com framework web que utilize noções de banco de dados, praticando controle de versão"
+    />
+    <!--descrição so site-->
+    <meta
+      name="author"
+      content="CLESIO JOSE DA SILVA CLEMENTE, LARISSA CELESTINO FERRAZ, MIRIÃ DA SILVA RIBEIRO,MArCEL LUCHI MARCHI, LEORNADO RODRIGUES HORIKOS"
+    />
+    <title>TÁ NA HORA...</title>
+    <link
+      rel="shortcut icon"
+      href="5130logo-univesp_completo_cor-negativo.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="fundo">
+      <header class="header">
+        <nav class="nav">
+          <a href="/index" class="logo">
+            <h1>
+              Tá na H <i class="fa fa-clock-o" aria-hidden="true"></i> ra...
+            </h1>
+          </a>
+          <!-- *** MENU *** -->
+          <ul class="nav-list">
+            <li><a data-anchor="product" href="/responsavel"> Home </a></li>
+            <li>
+              <a data-anchor="product" href="/responsavel/atividade">
+                Atividades
+              </a>
+            </li>
+            <li>
+              <a data-anchor="product" href="/responsavel/dependente/adicionar">
+                Adicionar Dependente
+              </a>
+            </li>
+            <li><a data-anchor="product" href="/perfil"> Perfil </a></li>
+            <li><a data-anchor="product" href="#"> Calendario </a></li>
+            <li><a data-anchor="product" href="/sobre"> Sobre </a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="pag-calendario">
+        <section id="calendario-mes">
+          <div id="botoes">
+            <button id="anterior">< Anterior</button>
+            <h1>Novembro de 2024</h1>
+            <button id="proximo">Proximo ></button>
+          </div>
+          <div id="calendario">
+            <div id="mes-atual">
+              <table>
+                <thead>
+                  <tr>
+                    <td id="sem-dia">DOM</td>
+                    <td id="sem-dia">SEG</td>
+                    <td id="sem-dia">TER</td>
+                    <td id="sem-dia">QUA</td>
+                    <td id="sem-dia">QUI</td>
+                    <td id="sem-dia">SEX</td>
+                    <td id="sem-dia">SÁB</td>
+                  </tr>
+                </thead>
+                <tbory>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="hover">1</td>
+                    <td id="feriado hover">2</td>
+                  </tr>
+                  <tr>
+                    <td id="hover">3</td>
+                    <td id="hover">4</td>
+                    <td id="hover">5</td>
+                    <td id="hover">6</td>
+                    <td id="hover">7</td>
+                    <td id="hover">8</td>
+                    <td id="hover">9</td>
+                  </tr>
+                  <tr>
+                    <td id="hover">10</td>
+                    <td id="hover">11</td>
+                    <td id="hover">12</td>
+                    <td id="hover">13</td>
+                    <td id="hover">14</td>
+                    <td id="feriado hover">15</td>
+                    <td>16</td>
+                  </tr>
+                  <tr>
+                    <td id="hover">17</td>
+                    <td id="hover">18</td>
+                    <td id="hover">19</td>
+                    <td id="feriado hover">20</td>
+                    <td id="hover">21</td>
+                    <td id="hover">22</td>
+                    <td id="hover">23</td>
+                  </tr>
+                  <tr>
+                    <td id="hover">24</td>
+                    <td id="hover">25</td>
+                    <td id="hover">26</td>
+                    <td id="hover">27</td>
+                    <td id="hover">28</td>
+                    <td id="hover">29</td>
+                    <td id="hover">30</td>
+                  </tr>
+                </tbory>
+              </table>
+            </div>
+          </div>
+          <div id="add-evento">
+            <button>Nova Tarefa</button>
+            <button>Remover Tarefa</button>
+            <button>Editar Tarefa</button>
+          </div>
+        </section>
+        <section id="calendario-mensal">
+          <div id="outubro">
+            <h2>Outubro 2024</h2>
+            <table>
+              <thead>
+                <tr>
+                  <td id="sem-dia">DOM</td>
+                  <td id="sem-dia">SEG</td>
+                  <td id="sem-dia">TER</td>
+                  <td id="sem-dia">QUA</td>
+                  <td id="sem-dia">QUI</td>
+                  <td id="sem-dia">SEX</td>
+                  <td id="sem-dia">SÁB</td>
+                </tr>
+              </thead>
+              <tbory>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td id="hover">1</td>
+                  <td id="hover">2</td>
+                  <td id="hover">3</td>
+                  <td id="hover">4</td>
+                  <td id="hover">5</td>
+                </tr>
+                <tr>
+                  <td id="hover">6</td>
+                  <td id="hover">7</td>
+                  <td id="hover">8</td>
+                  <td id="hover">9</td>
+                  <td id="hover">10</td>
+                  <td id="hover">11</td>
+                  <td id="feriado">12</td>
+                </tr>
+                <tr>
+                  <td id="hover">13</td>
+                  <td id="hover">14</td>
+                  <td id="feriado">15</td>
+                  <td id="hover">16</td>
+                  <td id="hover">17</td>
+                  <td id="hover">18</td>
+                  <td id="hover">19</td>
+                </tr>
+                <tr>
+                  <td id="hover">20</td>
+                  <td id="hover">21</td>
+                  <td id="hover">22</td>
+                  <td id="hover">23</td>
+                  <td id="hover">24</td>
+                  <td id="hover">25</td>
+                  <td id="hover">26</td>
+                </tr>
+                <tr>
+                  <td id="hover">27</td>
+                  <td id="feriado">28</td>
+                  <td id="hover">29</td>
+                  <td id="hover">30</td>
+                  <td id="hover">31</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbory>
+            </table>
+          </div>
+          <div id="novembro">
+            <h2>Novembro 2024</h2>
+            <table>
+              <thead>
+                <tr>
+                  <td id="sem-dia">DOM</td>
+                  <td id="sem-dia">SEG</td>
+                  <td id="sem-dia">TER</td>
+                  <td id="sem-dia">QUA</td>
+                  <td id="sem-dia">QUI</td>
+                  <td id="sem-dia">SEX</td>
+                  <td id="sem-dia">SÁB</td>
+                </tr>
+              </thead>
+              <tbory>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td id="hover">1</td>
+                  <td id="feriado hover">2</td>
+                </tr>
+                <tr>
+                  <td id="hover">3</td>
+                  <td id="hover">4</td>
+                  <td id="hover">5</td>
+                  <td id="hover">6</td>
+                  <td id="hover">7</td>
+                  <td id="hover">8</td>
+                  <td id="hover">9</td>
+                </tr>
+                <tr>
+                  <td id="hover">10</td>
+                  <td id="hover">11</td>
+                  <td id="hover">12</td>
+                  <td id="hover">13</td>
+                  <td id="hover">14</td>
+                  <td id="feriado">15</td>
+                  <td id="hover">16</td>
+                </tr>
+                <tr>
+                  <td id="hover">17</td>
+                  <td id="hover">18</td>
+                  <td id="hover">19</td>
+                  <td id="feriado">20</td>
+                  <td id="hover">21</td>
+                  <td id="hover">22</td>
+                  <td id="hover">23</td>
+                </tr>
+                <tr>
+                  <td id="hover">24</td>
+                  <td id="hover">25</td>
+                  <td id="hover">26</td>
+                  <td id="hover">27</td>
+                  <td id="hover">28</td>
+                  <td id="hover">29</td>
+                  <td id="hover">30</td>
+                </tr>
+              </tbory>
+            </table>
+          </div>
+          <div id="dezembro">
+            <h2>Dezembro 2024</h2>
+            <table>
+              <thead>
+                <tr>
+                  <td id="sem-dia">DOM</td>
+                  <td id="sem-dia">SEG</td>
+                  <td id="sem-dia">TER</td>
+                  <td id="sem-dia">QUA</td>
+                  <td id="sem-dia">QUI</td>
+                  <td id="sem-dia">SEX</td>
+                  <td id="sem-dia">SÁB</td>
+                </tr>
+              </thead>
+              <tbory>
+                <tr>
+                  <td id="hover">1</td>
+                  <td id="hover">2</td>
+                  <td id="hover">3</td>
+                  <td id="hover">4</td>
+                  <td id="hover">5</td>
+                  <td id="hover">6</td>
+                  <td id="hover">7</td>
+                </tr>
+                <tr>
+                  <td id="hover">8</td>
+                  <td id="hover">9</td>
+                  <td id="hover">10</td>
+                  <td id="hover">11</td>
+                  <td id="hover">12</td>
+                  <td id="hover">13</td>
+                  <td id="hover">14</td>
+                </tr>
+                <tr>
+                  <td id="hover">15</td>
+                  <td id="hover">16</td>
+                  <td id="hover">17</td>
+                  <td id="hover">18</td>
+                  <td id="hover">19</td>
+                  <td id="hover">20</td>
+                  <td id="hover">21</td>
+                </tr>
+                <tr>
+                  <td id="hover">22</td>
+                  <td id="hover">23</td>
+                  <td id="hover">24</td>
+                  <td id="feriado">25</td>
+                  <td id="hover">26</td>
+                  <td id="hover">27</td>
+                  <td id="hover">28</td>
+                </tr>
+                <tr>
+                  <td id="hover">29</td>
+                  <td id="hover">30</td>
+                  <td id="hover">31</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbory>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <footer id="footer-sobre">
+        <div class="fo-sobre">
+          <div class="footer-sob">
+            <h4>Tá na Hora...</h4>
+            <ul>
+              <li><a href="/sobre"> Quem Somos? </a></li>
+              <li><a href="#"> Política de Privacidade. </a></li>
+            </ul>
+          </div>
+          <div class="footer-sob">
+            <h4>Obter ajuda</h4>
+            <ul>
+              <li><a href="/sobre">Duvidas?</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-sob">
+            <h4>Se subescreva!</h4>
+            <div class="medias-socias">
+              <a href="https://pt-br.facebook.com/">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="https://www.whatsapp.com">
+                <i class="fa fa-whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="final-sob">
+          <p>&copy;Projeto Integrador em Computação II</p>
+          <p>
+            &copy; Desenvolver um software com framework web que utilize banco
+            de dados, script web, nuvem, uso de API, acessibilidade e controle
+            de versão.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
