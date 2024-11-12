@@ -6,7 +6,10 @@ UsuarioAtividade = db.Table(
     'usuario_atividade',
     db.metadata,
     db.Column('usuario_id', db.ForeignKey('usuario.id')),
-    db.Column('atividade_id', db.ForeignKey('atividade.id')))
+    db.Column('atividade_id', db.ForeignKey('atividade.id')),
+    db.Column('data', db.Date),
+    db.Column('concluido', db.Boolean))
+    
 
 class Usuario(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
