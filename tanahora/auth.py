@@ -88,7 +88,7 @@ def logout():
 @auth.route('/perfil')
 @login_required
 def perfil():
-    return render_template('perfil.html')
+    return render_template('perfil.html', usuario=current_user)
 
 @auth.route('/home')
 @login_required
@@ -106,7 +106,8 @@ def home_responsavel():
 @login_required
 @requer_responsavel
 def cadastro_atividade():
-    return render_template('atividades.html')
+    lista_atividades = Atividade.query.all()
+    return render_template('atividades.html', lista_atividades=lista_atividades)
 
 @auth.route('/responsavel/dependente/adicionar')
 @login_required
@@ -155,3 +156,8 @@ def cadastro_dependente_post():
 @login_required
 def home_dependente():
     return render_template('home-dependente.html', usuario=current_user)
+
+@auth.route('/calendario')
+@login_required
+def calendario():
+    return render_template('calendario.html', usuario=current_user)

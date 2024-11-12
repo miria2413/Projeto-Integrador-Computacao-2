@@ -30,8 +30,10 @@ class CategoriaAtividade(db.Model):
 class Atividade(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     categ_id = db.Column(db.Integer, db.ForeignKey('categoria_atividade.id'))
+    nome = db.Column(db.String(1000))
     descricao = db.Column(db.String(1000))
     idade_minima = db.Column(db.Integer)
     idade_maxima = db.Column(db.Integer)
+    pontos = db.Column(db.Integer)
     usuarios = db.relationship('Usuario', secondary=UsuarioAtividade, backref='Usuario')
-
+    categoria = db.relationship('CategoriaAtividade', backref='atividade')

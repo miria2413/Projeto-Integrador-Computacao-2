@@ -65,7 +65,7 @@
               </a>
             </li>
             <li><a data-anchor="product" href="/perfil"> Perfil </a></li>
-            <li><a data-anchor="product" href="#"> Calendario </a></li>
+            <li><a data-anchor="product" href="/calendario"> Calendario </a></li>
             <li><a data-anchor="product" href="/sobre"> Sobre </a></li>
           </ul>
         </nav>
@@ -115,7 +115,7 @@
                 id="name-perfil"
                 type="text"
                 name="firstname"
-                placeholder="Digite seu primeiro nome."
+                placeholder="{{ usuario.firstname }} {{ usuario.lastname }}"
                 disabled
               />
             </div>
@@ -125,7 +125,7 @@
                 id="nickname-perfil"
                 type="text"
                 name="nickname"
-                placeholder="Digite seu apelido."
+                placeholder="{{ usuario.nickname }}"
                 required
               />
             </div>
@@ -133,9 +133,9 @@
               <label for="birthdate-perfil">Data de Nascimento:</label>
               <input
                 id="birthdate-perfil"
-                type="date"
+                type="text"
                 name="birthdate"
-                placeholder="12/03/1999"
+                placeholder="{{ usuario.birthdate.strftime('%d/%m/%Y') }}"
                 disabled
               />
             </div>
@@ -145,7 +145,7 @@
                 id="email-perfil"
                 type="email"
                 name="email"
-                placeholder="Digite seu E-mail."
+                placeholder="{{ usuario.email }}"
                 required
               />
             </div>
@@ -155,7 +155,7 @@
                 id="tel-perfil"
                 type="tel"
                 name="telephone"
-                placeholder="(xx) xxxxx-xxxx "
+                placeholder="{{ usuario.telephone }}"
                 required
               />
             </div>
@@ -175,7 +175,7 @@
                 id="gender-perfil"
                 type="text"
                 name="gender"
-                placeholder="Digite. "
+                placeholder="{{ usuario.gender }}"
                 required
               />
             </div>
