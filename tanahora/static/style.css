@@ -41,6 +41,8 @@ body {
 }
 
 .nav .logo {
+   border-radius: 10px;
+   padding: 0 5px;
    background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
 }
 
@@ -95,7 +97,7 @@ li.botao a {
    color: #4b72fd;
    margin: 10px 15px;
    font-weight: bold;
-   font-size: 50px;
+   font-size: 30px;
 }
 
 .texto-home button {
@@ -113,7 +115,7 @@ li.botao a {
 
 .texto-home p {
    margin: 15px 35px;
-   font-size: 30px;
+   font-size: 20px;
 }
 
 strong {
@@ -121,87 +123,133 @@ strong {
 }
 
 .img-home img {
-   width: 480px;
+   width: 350px;
    border-radius: 40%;
 }
 
 footer {
    padding: 10px;
-   font-size: 15px;
+   font-size: 10px;
 }
 
 /*pagina login*/
 .box-label {
-   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 3px 3px 5px #ccc;
+   padding: 20px;
    display: flex;
-   font-size: 25px;
-   width: 100%;
+   font-size: 18px;
+   width: 80%;
    flex-direction: column;
 }
 
 form {
-   width: 100%;
+   border-radius: 10px;
+   width: 95%;
    height: 100%;
-   margin: 15px;
-   justify-content: center;
-   align-items: center;
+   margin: 10px;
 }
 
 .campo-input {
    display: flex;
-   flex-direction: column;
-   gap: 15px;
+}
 
+#input-email {
+   font-size: 10px;
+   border: 1px solid #ccc;
+   border-radius: 15px;
+   width: 50%;
+   height: 25px;
+   text-align: left;
+   padding: 0 10px;
+   margin: 20px 0 0;
 }
 
 .lembrar {
    display: flex;
+   font-size: 10px;
    text-align: center;
    justify-content: center;
    gap: 10px;
-   margin: 20px 30px;
+   margin: 10px;
 }
 
 #login-title {
-   margin: 0 20px;
+   margin: 0 10px;
 }
 
 label {
-   margin: 20px 30px 0;
+   flex: 1;
+   font-size: 20px;
+   margin: 20px 10px 0 180px;
 }
 
-#password,
+input-box2 {
+   display: flex;   
+}
+
+
+#birthdate {
+   width: 25%;
+}
+
 #email,
+#password,
 #fC,
+#birthdate,
 #lastname,
 #nickname,
-#birthdate,
 #telephone,
-#gender {
-   border: 2px solid pink;
+#gender { 
+   flex: 3;
+   font-size: 10px;
+   border: 1px solid #ccc;
    border-radius: 15px;
-   width: 80%;
+   width: 40%;
    height: 30px;
-   text-align: center;
-   margin: 0 50px 15px;
+   text-align: left;
+   padding: 0 10px;
+   margin: 5px 0;
+}
+
+#birthdate {
+   width: 13%;
+}
+
+#email, #telephone {
+   width: 48%;
+}
+#password {
+   width: 48.5%;
+}
+
+#lastname {
+   width: 44%;
+}
+
+#nickname {
+   width: 42%;
+}
+#gender {
+   width: 47.5%;
 }
 
 .esqueceu {
    text-align: center;
-   margin: 5px;
-   font-size: 20px;
+   margin: 8px;
+   font-size: 12px;
+   margin-left: 25%;
 }
 
 .enviar-login input {
    text-align: center;
-   justify-content: center;
    background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
    border-radius: 10px;
-   width: 150px;
+   width: 100px;
    height: 30px;
-   font-size: 30px;
+   font-size: 20px;
    border: 0;
-   margin-left: 35%;
+   margin-left: 55%;
 }
 
 /*sobre*/
@@ -385,15 +433,13 @@ label {
 }
 
 .letras {
-   margin: 0 5px;
+   margin: 0 6px;
    background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
-   padding: 5px 13px;
+   padding: 5px 11.2px;
    border: 0;
    border-radius: 5px;
    box-shadow: 3px 3px 3px #a4a3a3;
 }
-
-
 
 #footer-sobre {
    font-size: 20px;
